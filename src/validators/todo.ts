@@ -8,5 +8,6 @@ export const TodoSchema = z.object({
 
 export const UpdateTodoSchema = TodoSchema.partial();
 
+
 export type TodoInputType = z.infer<typeof TodoSchema>;
 export type UpdateTodoInputType = z.infer<typeof UpdateTodoSchema>;

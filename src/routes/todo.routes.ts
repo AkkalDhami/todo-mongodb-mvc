@@ -21,7 +21,11 @@ router.post(
   createTodo
 );
 
-router.get("/", verifyAuthentication, checkUserAccountRestriction, getTodos);
+router.get("/",
+  verifyAuthentication,
+  checkUserAccountRestriction,
+  getTodos
+);
 
 router.get(
   "/:todoId",
